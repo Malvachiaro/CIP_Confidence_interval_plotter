@@ -1,0 +1,577 @@
+:root {
+
+    font-family: "AppFont";
+
+    /* background */
+    --palette-1: rgb(244, 244, 244);
+    /* text */
+    --palette-2: rgb(31, 31, 31);
+    /* call to action */
+    --palette-3: rgb(181, 102, 102);
+    /* borders */
+    --palette-4: rgb(66, 66, 66);
+    /* foreground */
+    --palette-5: rgb(111, 166, 218);
+    /* success */
+    --palette-6: rgb(151, 211, 159);
+    /* error */
+    --palette-7: rgb(214, 23, 23);
+
+
+    background-color: var(--palette-1);
+    color: var(--palette-2);
+
+    line-height: 1.3;
+
+    --call-to-action-color: var(--palette-3);
+    --main-color: var(--palette-2);
+    --main-color_complementary: var(--palette-5);
+    --main-color2: var(--palette-3);
+    --thin-border-color: var(--palette-4);
+
+    --field-selected-color: var(--main-color2);
+    --main-background-color: var(--palette-1);
+
+
+    --success-color: var(--palette-6);
+    --error-color1: var(--palette-7);
+
+    
+
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+body {
+    padding: 2rem;
+}
+
+
+
+/*#region general */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table th,
+table td {
+    border-collapse: collapse;
+    border: 1px solid var(--palette-4);
+    margin: 0;
+    padding: 0.4rem;
+}
+table a, table a:visited, table button{
+    color: var(--palette-2);
+}
+table a:hover, button:hover{
+    color: var(--call-to-action-color);
+}
+
+.error {
+    color: var(--error-color1);
+}
+
+.app_footer{
+    margin-top: 6rem;
+    font-size: 0.6em;
+    display: block;
+    text-align: center;
+}
+
+.app{
+    font-size: 1.2em;
+
+}
+
+.top_nav {
+    padding: 10px 0; /* Spazio interno sopra e sotto la barra di navigazione */
+    text-align: center; /* Centra il menu */
+    display: inline-block; /* Imposta la barra di navigazione come elemento inline-block */
+    margin: 0 auto; /* Imposta i margini laterali su auto per centrare la barra di navigazione */
+}
+
+.top_nav ul {
+    list-style-type: none; /* Rimuove i punti elenco predefiniti */
+    margin: 0; /* Rimuove il margine esterno predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+}
+
+.top_nav ul li {
+    display: inline; /* Disposizione orizzontale dei link */
+}
+
+.top_nav ul li a {
+    color: var(--palette-2);
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+    padding: 10px; /* Spazio intorno ai link */
+    font-size: 1.3em; /* Dimensione del carattere */
+}
+
+.top_nav ul li a:hover {
+    background-color: var(--palette-3);
+    color: var(--palette-1);
+}
+.top_nav ul li a.active {
+    background-color: var(--palette-3);
+    color: var(--palette-1);
+}
+
+/*#endregion general */
+
+/*#region input */
+
+label{
+    white-space: nowrap;
+}
+
+input,
+select,
+button,
+textarea {
+    font-family: inherit;
+    font-size: 1em;
+}
+
+label:has(input[type="checkbox"]),
+label:has(input[type="radio"]) {
+    cursor: pointer;
+}
+
+select:hover,
+option:hover,
+button:hover,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+input[type="range"]:hover {
+    cursor: pointer;
+}
+
+
+input, select, textarea, button{
+    background-color: var(--palette-3);
+}
+select{
+    color:var(--palette-2);
+    background-color: var(--palette-1);
+}
+
+
+input[type="number"]{
+    text-align: center;
+}
+
+button{
+    border: none;
+    border: 1px solid var(--thin-border-color);
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+button:disabled{
+    background-color: var(--palette-4);
+}
+button:disabled:hover{
+    background-color: var(--palette-4);
+}
+
+select {
+    color: var(--palette-2);
+    background-color: var(--palette-1);
+    border: 1px solid var(--thin-border-color);
+}
+
+input,
+textarea {
+    color: var(--palette-1);
+    background-color: var(--palette-3);
+    padding: 0.3em;
+}
+
+button.standard {
+    color: var(--palette-1);
+    background-color: var(--call-to-action-color);
+    padding: 0.5rem;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid var(--thin-border-color);
+}
+
+button.standard:hover {
+    background-color: var(--palette-5);
+}
+
+textarea {
+    resize: none;
+    width: 30em;
+    height: 8em;
+}
+
+
+
+/*#endregion input */
+
+/*#region links */
+a,
+a:visited {
+    color: var(--palette-3);
+}
+
+
+
+a:hover {
+    color: var(--palette-5);
+}
+
+/*#endregion links */
+
+/*#region Data page */
+#page_datapage table tr td:not(:nth-child(2)) {
+    text-align: center;
+}
+.sort_es_box{
+    float: right;
+}
+.block_header{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#page_datapage .newstudy {
+    margin-bottom: 6em;
+}
+#page_datapage .block_header h3{
+    font-size: 2em;
+    margin: 0;
+}
+
+
+/*#endregion END Data page */
+
+/*#region Fieldspage */
+#page_fields table tr td:not(:nth-child(2)) {
+    text-align: center;
+}
+
+/*#endregion END Fieldspage */
+
+/*#region Welcome page */
+.more_than_significant {
+    display: block;
+    text-align: center;
+    margin: 8rem auto;
+}
+/*#endregion Welcome page */
+
+/*#region Home page */
+#page_homepage .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: 0;
+}
+
+#page_homepage .form-container label {
+    margin-bottom: 10px;
+}
+
+#page_homepage .form-container textarea {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#page_homepage .form-container textarea {
+    height: 10rem;
+    width: 30rem;
+}
+
+#page_homepage .form-container button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+/*#endregion Home page */
+
+/*#region page_row_edit */
+
+#page_row_edit fieldset{
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+}
+#page_row_edit label{
+    margin: 0 0.5em 0 0;
+}
+#page_row_edit fieldset label:first-of-type{
+    margin-left: 0;
+}
+#page_row_edit .deleteAction{
+    float: right;
+}
+#page_row_edit .commands button{
+    margin-right: 1rem;
+}
+
+/*#endregion page_row_edit */
+
+/*#region App bar */
+.app_bar {
+    color: var(--palette-2);
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.6rem 0;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.app_bar a {
+    text-decoration: none;
+}
+
+.app_bar button{
+    background-color: var(--palette-3);
+}
+.theme_switcher {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+    font-size: 0.6em;
+}
+
+.theme_switcher button {
+    font-size: inherit;
+    background-color: var(--palette-3);
+}
+
+.zoom_control {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.2rem;
+    font-size: 0.7em;
+}
+
+.app_bar .zoom_control button {
+    box-sizing: border-box;
+    background-color: var(--palette-3);
+    border: none;
+    display: inline-block;
+    font-size: 0.9em;
+    height: 3em;
+}
+.app_bar .zoom_control button:hover{
+    background-color: var(--palette-5);
+}
+
+.app_bar .zoom_text_button {
+    box-sizing: border-box;
+    display: inline-block;
+    
+    width: 5em;
+    text-align: center;
+    
+}
+
+.app_bar .zoom_button {
+    box-sizing: border-box;
+    
+    width: 2.5em;
+    font-weight: bold;
+}
+
+
+.app_bar .current_url {
+    margin: 0 2em;
+}
+
+.app_bar .stars {
+    color: fuchsia;
+}
+
+.app_bar .about:hover .stars {
+    color: inherit;
+}
+
+.app_bar .about {
+    text-decoration: none;
+}
+
+.app_bar .about:hover {
+    color: var(--palette-3);
+}
+
+/*#endregion End App bar */
+
+
+
+/*#region Plot page */
+
+
+#page_plot.settings_bar {
+    margin: 0;
+    padding: 0;
+}
+#page_plot .settings_bar button {
+    background-color: white;
+    color: black;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: underline;
+    padding: 0.2rem 1rem;
+}
+#page_plot .settings_bar button:hover {
+    background-color: var(--palette-3);
+}
+
+#page_plot .plot_wrapper {
+
+    padding: 0;
+    position: relative;
+    overflow-x: auto;
+    min-height: 20rem;
+}
+#page_plot .plot_wrapper svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#page_plot .graph_controller {
+    font-size: 1.2rem;
+}
+
+#page_plot .graph_controller .tab {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 60%;
+    overflow-y: auto;
+    scroll-behavior: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+#page_plot .graph_controller nav {
+    width: 30%;
+    height: 90%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    
+}
+
+#page_plot .nav-item {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 100%;
+    height: 2rem;
+    word-wrap: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: white;
+}
+#page_plot .nav-item:hover {
+    background-color: var(--palette-3);
+}
+
+#page_plot .graph_controller nav button.isActive {
+    background-color: var(--palette-3);
+    padding-left: 0.3em;
+}
+#page_plot .graph_controller nav button.isActive:hover {
+    color: var(--palette-1);
+}
+#page_plot .graph_controller nav button:hover {
+    filter: brightness(120%);
+}
+
+#page_plot .graph_controller .controls_container {
+    box-sizing: border-box;
+    display: block;
+    width: 70%;
+    height: 90%;
+    overflow: auto;
+    padding: 0 1.5em 1.5em 1.5em;
+    font-size: 1em;
+}
+
+#page_plot .update-button {
+    margin: 3em 0 0 2em;
+}
+
+
+
+#page_plot .overlay {
+    z-index: 1000; /* Assicura che il div sia sopra gli altri elementi */
+    position: fixed; /* Posizione fissa rispetto alla viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Larghezza completa */
+    height: 100%; /* Altezza completa */
+    display: flex; /* Utilizzo di Flexbox per centrare il contenuto */
+    align-items: center; /* Allineamento verticale al centro */
+    justify-content: center; /* Allineamento orizzontale al centro */
+}
+
+#page_plot .close_button_header {
+    flex-basis: 100%;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    height: 5%;
+}
+#page_plot .close_button_header button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    margin: 0.5rem 1rem 0 0;
+    padding: 0;
+    text-decoration: underline;
+}
+/*#endregion End Plot page */

@@ -1,0 +1,4 @@
+name	isOverall	effectSize	lowerLimit	upperLimit	weight	variance	standardError	pValue	totalSS	sampleSizeGroup1	sampleSizeGroup2	notAssignedSS	ncf1	ncf2	ncf3	ncf4	ncf5	scf1	scf2	scf3	scf4	scf5
+Yellow et Al. 	false	1.7	1.5	0.6	3	16	4	0.025	136	99	37	0	null	null	null	null	null	extra 1	extra 2	extra 3	extra 4	extra 5
+Red et Al. 	false	2.6	2.5	2.7	0.3	16	4	0.025	136	99	37	0	null	null	null	null	null	extra 1	extra 2	extra 3	extra 4	extra 5
+Overall	true	2	2.5	3.1	1	1	4	0.025	136	99	37	0	null	null	null	null	null	extra 1	extra 2	extra 3	extra 4	extra 5
