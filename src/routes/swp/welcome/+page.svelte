@@ -51,6 +51,7 @@
 
 <style>
 	.start {
+		display: block;
 		text-align: center;
 	}
 	.stars{

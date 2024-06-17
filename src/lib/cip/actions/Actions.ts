@@ -75,9 +75,15 @@ export class AppActions{
         await AppFunctions.saveProjectToDisk();
     }
 
-    static async deleteRow(rowId: number): Promise<void> {
-        await AppFunctions.deleteRow(rowId);
-        await AppFunctions.saveProjectToDisk();
+    static async deleteRow(rowId: number): Promise<boolean> {
+        let tmp:boolean= await AppFunctions.deleteRow(rowId);
+        if(tmp){
+            await AppFunctions.saveProjectToDisk();
+            return true
+        }else{
+            return false
+        }
+        return false 
     }
 
     static async moveRowToBlock(srcBlockId:number, rowId: number, destinationBlockId: number): Promise<void> {

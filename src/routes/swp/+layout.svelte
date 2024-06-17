@@ -62,6 +62,7 @@
 		</button>
 		<div class:hide={app_bar_hide} class="app_bar">
 			<span>ver. {data.app_info}</span>
+			<p>&copy; 2024 <a href="/swp/cip/license">See license</a></p> | 
 			<span class="current_url">{currentUrl}</span>
 			<button title="Reload" on:click={clearBrowserCache}>&#10227</button>
 			<a title="About" class="about" href="/swp/welcome"><span class="stars">***</span>SWP</a>
@@ -74,11 +75,12 @@
 		</div>
 	</div>
 	<footer class="app_footer">
-		<p>&copy; 2024 Super wonder Plot. <a href="/swp/cip/license">See license</a></p>
+		
 	</footer>
 </div>
 
 <style>
+
 	.hide {
 		display: none;
 	}
@@ -86,7 +88,7 @@
 		padding-bottom: 2rem;
 	}
 	.current_url {
-		/* display:none; */
+		display:none;
 		font-size: 0.6em;
 	}
 </style>

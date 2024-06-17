@@ -55,8 +55,10 @@
 	let scf5: string | null = data.row.scf5;
 
 	async function deleteRow() {
-		await AppActions.deleteRow(Number(data.row.id));
-		goto('../data');
+		let res: boolean = await AppActions.deleteRow(Number(data.row.id));
+		if(res){
+			goto('../data');
+		}
 	}
 
 	async function update() {
