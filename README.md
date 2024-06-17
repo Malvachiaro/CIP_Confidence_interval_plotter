@@ -4,6 +4,10 @@ Super Wonder Plot is an open-source program for the creation of high-definition 
 The software is built using web technologies and encapsulated in an application installed on
 personal computers. The application does not require an internet connection and works offline.
 
+## Version
+
+Current version: 0.6.2
+
 # Welcome to Our Software
 
 ## Introduction
