@@ -42,7 +42,7 @@
 	onMount(async () => {
 		let t = await RuntimeVariablesFunctions.getVariable('theme');
 		if (t == null) {
-			t = 'commander46';
+			t = 'nightsky';
 			await RuntimeVariablesFunctions.setVariable('theme', t);
 		}
 		theme = t;

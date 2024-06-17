@@ -5,7 +5,7 @@ const DEFAULT_RUNTIME_VARIABLES = new Map<string, string>([
     ["projectDirectory", ""],
     ["projectFilename", ""],
     ["projectFilepath", ""],
-	["theme", "commander46"],
+	["theme", "nightsky"],
 ]);
 
 

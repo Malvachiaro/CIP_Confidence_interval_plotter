@@ -6,7 +6,7 @@ export const load: LayoutLoad = async ({params }) => {
     let f = await import ('$lib/cip/functions/AppFunctions')
 
     if(tmp == null){
-        tmp = "commander46"
+        tmp = "nightsky"
         await RuntimeVariablesFunctions.setVariable("theme", tmp)
     }
     return {
