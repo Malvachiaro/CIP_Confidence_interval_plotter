@@ -53,5 +53,7 @@
 	.start {
 		text-align: center;
 	}
-
+	.stars{
+		color:fuchsia;
+	}
 </style>

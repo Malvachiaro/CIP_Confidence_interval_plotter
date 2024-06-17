@@ -34,5 +34,7 @@
 		margin-top: 2rem;
 		text-align: center;
 	}
-
+	.goback button {
+		display: inline-block;
+	}
 </style>
