@@ -21,7 +21,7 @@
 		} catch (error) {}
 	}
 
-	let app_bar_hide = false;
+	let app_bar_hide = true;
 	onMount(async () => {
 		let tmp: string | null = await RuntimeVariablesFunctions.getVariable('app_bar_hide');
 		if (tmp == null) {
