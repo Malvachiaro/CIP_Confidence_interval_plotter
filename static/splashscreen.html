@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            animation: bounce 2s infinite;
+        }
+        .loading-text {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg class="icon" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <line x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-width="2"/>
+        <line x1="110" y1="50" x2="190" y2="50" stroke="black" stroke-width="2"/>
+        <polygon points="100,30 140,50 100,70 60,50" fill="black"/>
+    </svg>
+    <div class="loading-text">Loading</div>
+</body>
+</html>
+
+

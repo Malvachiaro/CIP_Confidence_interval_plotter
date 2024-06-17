@@ -1,15 +1,29 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+	import { AppFunctions } from '$lib/cip/functions/AppFunctions';
+	import { onMount } from 'svelte';
 	import type { PageData } from '../welcome/$types';
+	import type { CipProject } from '$lib/cip/models/CipProject';
 
 	export let data: PageData;
-	const toCip = '/swp/cip/home';
+	const toCip = '/swp/starting';
+	const toData = '/swp/cip/project/data';
+
+	let startRoute = toCip
 	
+	onMount(async () => {
+		let tmp:CipProject | null = await AppFunctions.getRunningProject()
+		if (tmp!=null){
+			startRoute = toData
+		}else{
+			startRoute = toCip
+		}
+	})
+
 </script>
 
 <div id="page_welcomepage">
 	<header class="homepage_header">
-		<p>Super Wonder Plot - v.1.0.1</p>
+		<p>Super Wonder Plot - ver. {data.app_info}</p>
 		<p>Graphical tool for creating forest plots</p>
 	</header>
 
@@ -24,29 +38,20 @@
 	{/if}
 	<!-- /Themes -->
 
-	<a class="more_than_significant" href="{toCip}">
+	<a class="more_than_significant" href="./info">
 		<h1 class="more_than_significant"><span class="stars">***</span> More than significant</h1>
 	</a>
 
 
 
-	<a href="{toCip}"><h2>Super Wonder Plot</h2></a>
+	<a class="start" href="{startRoute}"><h2>Start</h2></a>
 
-	<p>
-		Super Wonder Plot is an open-source program for the creation of high-definition forest plots.
-		The software is built using web technologies and encapsulated in an application installed on
-		personal computers. The application does not require an internet connection and works offline.
-		<button class="standard" type="button" on:click={() => goto(toCip)}>Open</button>
-	</p>
 
-	<h2>News</h2>
-	<p>
-		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi atque labore optio id. Magnam,
-		obcaecati natus sed magni quasi eligendi minima consectetur repudiandae amet, adipisci aliquam
-		consequuntur nam error aliquid?
-	</p>
 </div>
 
 <style>
+	.start {
+		text-align: center;
+	}
 
 </style>

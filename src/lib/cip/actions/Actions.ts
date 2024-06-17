@@ -13,6 +13,8 @@ export class AppActions{
         await AppFunctions.createNewProject(prjectName, projectDescription);
     }
 
+
+
     static async isSaved(): Promise<boolean> {
         return await AppFunctions.isSaved();
     }

@@ -24,23 +24,52 @@
 		await AppActions.createNewRow(blockId);
 		invalidateAll();
 	}
+
+	let hide_explanation = true;
+	async function toogle_explanation() {
+		hide_explanation = !hide_explanation;
+	}
 </script>
 
 <div id="page_datapage">
 	{#if data.blocks == null}
 		<h1>No project</h1>
 		<p>Before entering the data, you must create or load a project</p>
-		<button class="standard" type="button" on:click={() => goto('/swp/cip/home')}>Fix it</button>
+		<button class="standard" type="button" on:click={() => goto('/swp/starting')}>Fix it</button>
 	{:else}
 		<h1>Edit the effect sizes</h1>
-		<p>On this page, you can enter data about studies and effect sizes to create the forest plot. The fields visible on this page have been configured in the "fields" section and can be modified at any time to suit your needs.</p>
+		<span class="more_info"
+			><button type="button" on:click={toogle_explanation}>more info...</button></span
+		>
+		<div class="explanation" class:hide={hide_explanation}>
+			<p>
+				On this page, you can enter data about studies and effect sizes to create the forest plot.
+				The fields visible in the tabls have been configured in the "fields" section and can be
+				modified at any time to suit your needs.
+			</p>
 
-		<p>You can organize the data into blocks, which helps in managing and aligning the values in the forest plot. If only one block is entered, its name will not be displayed in the chart. Each block provides a dedicated button to add studies or effect sizes, making it easy to build your dataset comprehensively.</p>
-		
-		<p>To maintain a clear and organized display, you can sort the data using the sorting panel. While the automatic sorting feature is available, you also have the flexibility to sort the data manually. Manual sorting will override any automatic arrangements, giving you complete control over the order of the information.</p>
-		
-		<p>Additionally, next to each block and each individual study or effect size, there is a button that grants access to advanced functions. These features allow you to further customize and refine your data input, ensuring that your forest plot is accurate and tailored to your specific requirements.</p>
-		
+			<p>
+				You can organize the data into blocks, which helps in managing and aligning the values in
+				the forest plot. If only one block is entered, its name will not be displayed in the plot.
+				Each block provides a dedicated button to add studies or effect sizes, making it easy to
+				build your dataset comprehensively.
+			</p>
+
+			<p>
+				To maintain a clear and organized display, you can sort the data using the sorting panel.
+				While the automatic sorting feature is available, you also have the flexibility to sort the
+				data manually. Manual sorting will override any automatic arrangements, giving you complete
+				control over the order of the information. If you add new effect sizes or studies, they will
+				NOT be sorted automatically.
+			</p>
+
+			<p>
+				Additionally, next to each block and each individual study or effect size, there is a button
+				that grants access to advanced functions. These features allow you to further customize and
+				refine your data input, ensuring that your forest plot is accurate and tailored to your
+				specific requirements.
+			</p>
+		</div>
 		<DataTableSortBox
 			fieldsSettings={data.fieldsSettings}
 			sortBy={data.runtimeVariables.sortBy}
@@ -111,11 +140,7 @@
 											rowBlockId={block.id}
 										></RowEditPopoupMenu>
 									</td>
-									<td
-										><a class="link_to_study" href="data/row?rowId={row.id}"
-											>{row.name}</a
-										></td
-									>
+									<td><a class="link_to_study" href="data/row?rowId={row.id}">{row.name}</a></td>
 									<td
 										><div class="overallMarker" title={row.isOverall ? 'Overall' : 'Study/ES'}>
 											-{row.isOverall ? '◇' : '■'}-
@@ -163,4 +188,15 @@
 </div>
 
 <style>
+	.hide {
+		display: none;
+	}
+	.more_info {
+		display: block;
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+	.more_info button {
+		display: inline-block;
+	}
 </style>

@@ -16,6 +16,3 @@
 	<button type="button" on:click={saveAsToDisk}>Save As</button>
 </div>
 
-<style>
-
-</style>

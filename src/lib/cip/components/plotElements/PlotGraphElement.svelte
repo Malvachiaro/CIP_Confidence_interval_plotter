@@ -191,5 +191,3 @@
     {/if}
 {/each}
 
-<style>
-</style>

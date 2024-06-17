@@ -1,12 +1,21 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+
 
 	import { page } from '$app/stores';
+	import { AppActions } from '$lib/cip/actions/Actions';
 
 
 	$: url = $page.url.pathname;
 
 
 	let baseUrl = '/swp/cip/project/';
+
+
+	async function close_project() {
+		await AppActions.clearCache();
+		goto("/swp/starting");
+	}
 
 </script>
 
@@ -27,11 +36,11 @@
 	</ul>
 </nav>
 
+<button type="button" class="close_project_button" on:click={close_project}>Close this project</button>
+
 
 <section>
 	<slot/>
 </section>
 
-<style>
 
-</style>

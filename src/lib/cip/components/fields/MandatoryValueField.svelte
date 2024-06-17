@@ -29,7 +29,6 @@
         display: inline-block;
     }
 	.label {
-		text-align: center;
         display: block;
 		margin: 0.5rem 0;
 	}

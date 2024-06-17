@@ -31,7 +31,3 @@
         <button class="standard" type="button" on:click={sortRows}>Sort</button>
 </div>
 
-<style>
-
-
-</style>

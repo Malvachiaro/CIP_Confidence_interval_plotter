@@ -19,7 +19,3 @@
 {/if}
 
 
-<style>
-
-
-</style>

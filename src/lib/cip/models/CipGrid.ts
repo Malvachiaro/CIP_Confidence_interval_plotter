@@ -15,7 +15,6 @@ export class CipGrid {
 
 
 
-    //TODO C'è un problema, se metto 3 vengono dei numeri se metto 4 vengono sempre 3 numeri ma diversi
     public static getGridlineTicks(min:number, max:number, maxTicksAmount: number, nullValue:number): number[] {
         let increment = CipGrid.testIncrements(min, max, maxTicksAmount, CipGrid.gridIncrementsBase);
         let ticks = [];

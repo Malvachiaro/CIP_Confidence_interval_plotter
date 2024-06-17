@@ -34,6 +34,3 @@
 	<button title="Zoom in" class="zoom_button" type="button" on:click={increaseFont}>+</button>
 </div>
 
-<style>
-
-</style>

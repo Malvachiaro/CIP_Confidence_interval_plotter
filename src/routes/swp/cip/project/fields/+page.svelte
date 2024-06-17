@@ -147,7 +147,7 @@
 </script>
 
 <div id="page_fields">
-	<h1>Project settings</h1>
+	<h1>Fields settings</h1>
 
 	{#if data.fieldsSettings == null}
 		<h1>No project</h1>
@@ -506,7 +506,3 @@
 		<MessageBox {messageType}>{message}</MessageBox>
 	{/if}
 </div>
-
-<style>
-	
-</style>

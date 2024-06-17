@@ -518,6 +518,3 @@
 	{/if}
 </div>
 
-<style>
-
-</style>
