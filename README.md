@@ -80,10 +80,6 @@ Make sure you have the following tools installed:
 
 If you have any questions or encounter problems, visit our [support page](https://www.yourwebsite.com/support) or open an [issue](https://github.com/your-username/your-repo/issues) in the GitHub repository.
 
-## Contributing
 
-We welcome contributions! Please refer to our [CONTRIBUTING.md](CONTRIBUTING.md) guide for more details on how you can contribute to the project.
-
-Thank you for your support and happy coding!
 
 

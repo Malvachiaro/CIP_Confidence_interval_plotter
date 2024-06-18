@@ -25,8 +25,8 @@
 	onMount(async () => {
 		let tmp: string | null = await RuntimeVariablesFunctions.getVariable('app_bar_hide');
 		if (tmp == null) {
-			app_bar_hide = false;
-			RuntimeVariablesFunctions.setVariable('app_bar_hide', 'false');
+			app_bar_hide = true;
+			RuntimeVariablesFunctions.setVariable('app_bar_hide', 'true');
 		} else {
 			app_bar_hide = tmp == 'true';
 		}

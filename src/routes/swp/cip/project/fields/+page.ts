@@ -5,7 +5,7 @@ import type { PageLoad } from "./$types";
 
 export const load = (async () => {
 
-
+    console.log("fields load")
     let f = await import ('$lib/cip/functions/AppFunctions')
 
     let prj:CipProject | null = await f.AppFunctions.getRunningProject()

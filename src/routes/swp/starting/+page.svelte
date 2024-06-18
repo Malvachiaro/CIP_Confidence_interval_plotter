@@ -38,7 +38,7 @@
 		<button class="standard" on:click={load}>Load</button>
 		or
 		<button class="standard" on:click={showCreateForm}>Create</button>
-		a project?
+		a project.
 	</div>
 	<div class:hide={!createFormVisible} class="create_new_project_form">
 		<NameField bind:isOk={newProjectFormIsOk} bind:value={newProjectName} />

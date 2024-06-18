@@ -12,14 +12,17 @@
 		const responseProd = await fetch('/licenses/production-licenses.json');
 		const jsonDataProd = await responseProd.json();
 		dataProd = Array.isArray(jsonDataProd) ? jsonDataProd : [];
+
 	});
+
+	
 </script>
 
 <h1>Super Wonder Plot License</h1>
 
 <h2>MIT License</h2>
 
-<p>Copyright (c) [2024-] [Giacomo Scarpellini]</p>
+<p>Copyright (c) [2024-] [Giacomo Scarpellini &lt;giacomo.scarpellini@gmail.com&gt;]</p>
 
 <p> is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

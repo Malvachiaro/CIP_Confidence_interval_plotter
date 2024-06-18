@@ -101,7 +101,7 @@
 		Download a ready-to-use template from
 		<button type="button" on:click={download_template} class="template_download_button">here</button
 		>
-		to use with your spreadsheet. Do not modify the column headers or the data will not be imported.
+		to use with your spreadsheet software. Do not modify the column headers or the data will not be imported.
 	</p>
 	<p>
 		The spreadsheet should automatically recognize all separators and delimiters. If this does not
