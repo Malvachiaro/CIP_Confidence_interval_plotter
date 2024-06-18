@@ -97,4 +97,23 @@ SOFTWARE.</p>
 		{/each}
 	</tbody>
 </table>
+
+<h2>Fonts</h2>
+<h3>Source Code Pro</h3>
+<p>Author: Paul D. Hunt</p>
+<p>License: SIL OPEN FONT LICENSE Version 1.1</p>
+<p>https://github.com/adobe-fonts/source-code-pro/blob/release/LICENSE.md</p>
+
+<h3>Architects Daughter</h3>
+<p>Author: Kimberly Geswein</p>
+<p>License: Open Font License</p>
+
+
+<h3>Press Start 2P</h3>
+<p>Author: CodeMan38</p>
+<p>License: Open Font License</p>
+
+
+
+
 <button class="standard" type="button" on:click={() => window.history.back()}>Back</button>
