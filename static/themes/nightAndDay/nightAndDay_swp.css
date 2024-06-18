@@ -1,44 +1,3 @@
-:root {
-
-    font-family: "AppFont";
-
-    /* background */
-    --palette-1: rgb(16, 16, 16);
-    /* text */
-    --palette-2: rgb(202, 202, 202);
-    /* call to action */
-    --palette-3: rgb(36, 133, 168);
-    /* borders */
-    --palette-4: rgb(66, 66, 66);
-    /* foreground */
-    --palette-5: rgb(96, 210, 225);
-    /* success */
-    --palette-6: rgb(151, 211, 159);
-    /* error */
-    --palette-7: rgb(214, 23, 23);
-
-
-    background-color: var(--palette-1);
-    color: var(--palette-2);
-
-    line-height: 1.3;
-
-    --call-to-action-color: var(--palette-3);
-    --main-color: var(--palette-2);
-    --main-color_complementary: var(--palette-5);
-    --main-color2: var(--palette-3);
-    --thin-border-color: var(--palette-4);
-
-    --field-selected-color: var(--main-color2);
-    --main-background-color: var(--palette-1);
-
-
-    --success-color: var(--palette-6);
-    --error-color1: var(--palette-7);
-
-
-
-}
 
 *{
     box-sizing: border-box;
@@ -65,36 +24,7 @@ body {
     padding: 2rem;
 }
 
-select {
-    color: var(--palette-1);
-    background-color: var(--palette-2);
-}
 
-input,
-textarea {
-    color: var(--palette-1);
-    background-color: var(--palette-2);
-    padding: 0.1rem;
-}
-
-button.standard {
-    color: var(--palette-1);
-    background-color: var(--call-to-action-color);
-    padding: 0.5rem;
-    border-radius: 2px;
-    outline: none;
-    border: 1px solid var(--thin-border-color);
-}
-
-button.standard:hover {
-    background-color: var(--palette-5);
-}
-
-textarea {
-    resize: none;
-    width: 30em;
-    height: 8em;
-}
 
 
 /*#region general */
@@ -181,12 +111,11 @@ label{
     white-space: nowrap;
 }
 
-input,
-select,
-button,
-textarea {
-    font-family: inherit;
-}
+
+
+
+
+
 
 label:has(input[type="checkbox"]),
 label:has(input[type="radio"]) {
@@ -203,32 +132,70 @@ input[type="range"]:hover {
 }
 
 
-input, select, textarea, button{
+
+select {
+    font-family: inherit;
+    color: var(--palette-1);
     background-color: var(--palette-2);
+}
+
+input, select, textarea  {
+    font-family: inherit;
+    color: var(--palette-1);
+    background-color: var(--input-background-color);
+    padding: 0.3em;
     font-size:1em;
 }
 
-input, textarea{
-    padding: 0.3em;
+
+
+textarea {
+    resize: none;
+    width: 30em;
+    height: 8em;
 }
+
+
 input[type="number"]{
     text-align: center;
 }
 
+
 button{
+    background-color: var(--palette-3);
+    font-size:1em;
     border: none;
 }
 button:hover{
     background-color: white;
     color: black;
 }
-
 button:disabled{
     background-color: var(--palette-4);
 }
 button:disabled:hover{
     background-color: var(--palette-4);
 }
+
+button.standard {
+    color: var(--palette-1);
+    background-color: var(--call-to-action-color);
+    padding: 0.5rem;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid var(--thin-border-color);
+}
+
+button.standard:hover {
+    background-color: var(--palette-5);
+}
+
+
+
+
+
+
+
 
 /*#endregion input */
 
@@ -345,14 +312,12 @@ a:hover {
     position: absolute;
     top: 1rem;
     right: 3rem;
-    background-color: var(--palette-3);
     color: var(--palette-1);
     padding: 0.2rem 0.6rem;
     font-size: 0.8rem;
     border-radius: 0.5rem;
 }
 .app_bar {
-    color: var(--palette-2);
     display: flex;
     position: absolute;
     top: 0;
@@ -392,7 +357,6 @@ a:hover {
 
 .app_bar .zoom_control button {
     box-sizing: border-box;
-    background-color: var(--palette-2);
     border: none;
     display: inline-block;
     font-size: 0.9em;

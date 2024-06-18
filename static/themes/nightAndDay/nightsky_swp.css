@@ -1,0 +1,38 @@
+:root {
+
+    font-family: "AppFont";
+
+    /* background */
+    --palette-1: rgb(16, 16, 16);
+    /* text */
+    --palette-2: rgb(202, 202, 202);
+    /* call to action */
+    --palette-3: rgb(36, 133, 168);
+    /* borders */
+    --palette-4: rgb(66, 66, 66);
+    /* foreground */
+    --palette-5: rgb(96, 210, 225);
+    /* success */
+    --palette-6: rgb(151, 211, 159);
+    /* error */
+    --palette-7: rgb(214, 23, 23);
+
+
+    background-color: var(--palette-1);
+    color: var(--palette-2);
+
+    line-height: 1.3;
+
+    --call-to-action-color: var(--palette-3);
+    --main-color: var(--palette-2);
+    --main-color_complementary: var(--palette-5);
+    --main-color2: var(--palette-3);
+    --thin-border-color: var(--palette-4);
+
+    --field-selected-color: var(--main-color2);
+    --main-background-color: var(--palette-1);
+    --input-background-color:var(--palette-2);
+
+    --success-color: var(--palette-6);
+    --error-color1: var(--palette-7);
+}

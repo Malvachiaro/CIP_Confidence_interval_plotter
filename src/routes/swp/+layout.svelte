@@ -9,6 +9,7 @@
 	import IdeaTheme from '$lib/cip/themes/IdeaTheme.svelte';
 	import { onMount } from 'svelte';
 	import { RuntimeVariablesFunctions } from '$lib/cip/functions/lowLevel/RunningVariables';
+	import DayLightTheme from '$lib/cip/themes/DayLightTheme.svelte';
 	export let data: PageData;
 
 	let fontSize = 16;
@@ -42,6 +43,8 @@
 	<IdeaTheme />
 {:else if data.theme == 'commander46'}
 	<Commander46Theme />
+{:else if data.theme == 'daylight'}
+	<DayLightTheme />
 {:else}
 	<NightskyTheme />
 {/if}
@@ -61,8 +64,9 @@
 			</svg>
 		</button>
 		<div class:hide={app_bar_hide} class="app_bar">
-			<span>ver. {data.app_info}</span> 
-			<p>&copy; 2024 <a href="/swp/license">license</a></p> | 
+			<span>ver. {data.app_info}</span>
+			<p>&copy; 2024 <a href="/swp/license">license</a></p>
+			|
 			<span class="current_url">{currentUrl}</span>
 			<button title="Reload" on:click={clearBrowserCache}>&#10227</button>
 			<a title="About" class="about" href="/swp/welcome"><span class="stars">***</span>SWP</a>
@@ -74,13 +78,10 @@
 			<slot></slot>
 		</div>
 	</div>
-	<footer class="app_footer">
-		
-	</footer>
+	<footer class="app_footer"></footer>
 </div>
 
 <style>
-
 	.hide {
 		display: none;
 	}
@@ -88,7 +89,7 @@
 		padding-bottom: 2rem;
 	}
 	.current_url {
-		display:none;
+		display: none;
 		font-size: 0.6em;
 	}
 </style>
