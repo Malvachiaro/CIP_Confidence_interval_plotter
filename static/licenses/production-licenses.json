@@ -1,0 +1,15 @@
+[
+	{
+		"department": "kessler",
+		"relatedTo": "stuff",
+		"name": "dexie",
+		"licensePeriod": "perpetual",
+		"material": "material",
+		"licenseType": "Apache-2.0",
+		"link": "git+https://github.com/dexie/Dexie.js.git",
+		"remoteVersion": "4.0.7",
+		"installedVersion": "4.0.7",
+		"definedVersion": "^4.0.7",
+		"author": "David Fahlander <https://github.com/dfahlander>"
+	}
+]

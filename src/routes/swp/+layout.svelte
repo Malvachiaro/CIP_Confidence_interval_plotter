@@ -61,8 +61,8 @@
 			</svg>
 		</button>
 		<div class:hide={app_bar_hide} class="app_bar">
-			<span>ver. {data.app_info}</span>
-			<p>&copy; 2024 <a href="/swp/cip/license">See license</a></p> | 
+			<span>ver. {data.app_info}</span> 
+			<p>&copy; 2024 <a href="/swp/license">license</a></p> | 
 			<span class="current_url">{currentUrl}</span>
 			<button title="Reload" on:click={clearBrowserCache}>&#10227</button>
 			<a title="About" class="about" href="/swp/welcome"><span class="stars">***</span>SWP</a>
