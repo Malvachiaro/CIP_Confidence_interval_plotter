@@ -175,12 +175,7 @@ export class CipProjectHandler {
 			}
 		}
 		return false;
-		// }
-		// let tmp = project.blocks.find((item) => item.id === blockId);
-		// if (tmp === undefined) {
-		// 	throw Error('No block found');
-		// }
-		// tmp.rows = tmp.rows.filter((item) => item.id !== rowId);
+
 	}
 
 	public static getRow(project: CipProject,  rowId: number): CipRow | null {
@@ -193,18 +188,7 @@ export class CipProjectHandler {
 		return null;
 	}
 		
-	// 	let tmp = project.blocks.find((item) => item.id === blockId);
-	// 	if (tmp === undefined) {
-	// 		throw Error('No block found');
-	// 	}
-	// 	let ret: CipRow | undefined = tmp.rows.find((item) => item.id === rowId);
 
-	// 	if (ret === undefined) {
-	// 		return null;
-	// 	}
-
-	// 	return ret;
-	// }
 
 	public static moveRowToBlock(
 		project: CipProject,

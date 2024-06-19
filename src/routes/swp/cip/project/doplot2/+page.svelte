@@ -93,8 +93,7 @@
 	export let graphGridTicks: string = data.matrix.project.plotSettings.graphGridTicks;
 	export let graphGridScale: string = data.matrix.project.plotSettings.graphGridScale;
 
-	// Prepare PlotterMatrix
-	//let plotterMatrix = new PlotterMatrix(data.matrix.project);
+
 
 	// Check scale - values integrity
 	if (Number(data.matrix.min_value) <= 0) {

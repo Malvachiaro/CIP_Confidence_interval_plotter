@@ -51,7 +51,7 @@
 		sizes, and not assigned sample sizes. This helps in categorizing the data for more detailed
 		analysis.
 	</p>
-	<!-- - {isOk} = {totalSS} = {g1SS} + {g2SS} + {naSS} = { Number(g1SS ?? 0) + Number(g2SS ?? 0) + Number(naSS ?? 0)}  -->
+
 	<SampleSizeField label={totalSSlabel} bind:isOk={totalSS_isOk} bind:value={totalSS} />
 	=
 	<SampleSizeField label={g1SSlabel} bind:isOk={g1SS_isOk} bind:value={g1SS} />

@@ -23,14 +23,6 @@
 
     export let matrix:any
 
-    //export let plotterMatrix: PlotterMatrix;
-
-    //let rows: PlotterRow[] = plotterMatrix.rows;
-
-    //$: graph_x_pct = x_pct + graphPosition * width_coef;
-
-    //$: es_square_booster = (graphEsSquareSizeBooster / 100) * graphEsSquareSize;
-    //$: es_square_booster_NET = (1 - graphEsSquareSizeBooster / 100) * graphEsSquareSize;
 
     function calc_es(value: number, scale: string): number {
         if (scale === "Linear") {
@@ -64,7 +56,6 @@
         return ticks
             .split(",")
             .filter((element) => {
-                // Rimuove spazi vuoti agli estremi e controlla se la stringa è vuota
                 element = element.trim();
                 return (
                     element !== "" &&
