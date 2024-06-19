@@ -21,7 +21,7 @@ To simplify the use of our software, we provide precompiled executables that you
 
 ### Steps:
 
-1. Visit our [website](https://www.yourwebsite.com) to access the download section.
+1. Visit our [website](https://meta-analysys.actilab.onl) to access the download section.
 2. Select and download the executable corresponding to your operating system (Windows, macOS, Linux).
 3. Once downloaded, run the file to start the software.
 
@@ -77,9 +77,6 @@ Make sure you have the following tools installed:
 
     After the compilation, you will find the executable in the `src-tauri/target/release` directory. 
 
-## Support
-
-If you have any questions or encounter problems, visit our [support page](https://www.yourwebsite.com/support) or open an [issue](https://github.com/your-username/your-repo/issues) in the GitHub repository.
 
 
 
