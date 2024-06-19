@@ -21,7 +21,7 @@ To simplify the use of our software, we provide precompiled executables that you
 
 ### Steps:
 
-1. Visit our [website](https://meta-analysys.actilab.onl) to access the download section.
+1. Visit our [website](https://meta-analysis.actilab.onl) to access the download section.
 2. Select and download the executable corresponding to your operating system (Windows, macOS, Linux).
 3. Once downloaded, run the file to start the software.
 
