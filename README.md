@@ -6,7 +6,8 @@ personal computers. The application does not require an internet connection and 
 
 ## Version
 
-Current version: 0.6.2
+Current version: 0.6.3alpha
+The software is not ready for production
 
 # Welcome to Our Software
 
