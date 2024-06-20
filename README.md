@@ -43,7 +43,7 @@ Make sure you have the following tools installed:
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/Malvachiaro/CIP_Confidence_interval_plotter.git
     cd your-repo
     ```
 
