@@ -562,4 +562,15 @@ a:hover {
     padding: 0;
     text-decoration: underline;
 }
+
+.controls_tab label input[type="range"] {
+    margin-right: 0.5em;
+}
+
+.controls_tab label{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spazio tra gli elementi */
+}
+
 /*#endregion End Plot page */
