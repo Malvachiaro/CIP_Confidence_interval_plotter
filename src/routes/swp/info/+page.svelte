@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import type { PageData } from '../welcome/$types';
 
 	const toCip = '/swp/cip/home';
 	
