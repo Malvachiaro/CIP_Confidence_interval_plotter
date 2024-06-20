@@ -45,7 +45,7 @@ SOFTWARE.</p>
 <hr/>
 <br/><br/><br/>
 <h2>Third party lib - production</h2>
-<p>These libraries are included in the software. Follow the link to read the license details and for more information.</p>
+<p>These libraries are included in the software. The libraries have been included as they are, without modifications. Follow the link to read the license details and for more information.</p>
 <table>
 	<thead>
 		<tr>
