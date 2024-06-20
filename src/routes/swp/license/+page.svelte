@@ -72,7 +72,7 @@ SOFTWARE.</p>
 <h2>Third party lib - development</h2>
 
 <p>
-	Even though these software packages are not used directly in production, they are still part of
+	Even though these software packages are not included directly in production, they are still part of
 	the development process.  Follow the link to read the license details and for more information.
 </p>
 <table>
