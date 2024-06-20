@@ -24,6 +24,7 @@ To simplify the use of our software, we provide precompiled executables that you
 1. Visit the [website](https://meta-analysis.actilab.onl) to access the download section.
 2. Select and download the executable corresponding to your operating system (Windows, macOS, Linux).
 3. Once downloaded, run the file to install or run the software.
+*At the moment not all os are pre-compiled. If your os is missing, recompile CIP from the source code yourself
 
 ## Recompiling the Software
 
