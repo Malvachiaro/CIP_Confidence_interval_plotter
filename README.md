@@ -9,21 +9,21 @@ personal computers. The application does not require an internet connection and 
 Current version: 0.6.3alpha
 The software is not ready for production
 
-# Welcome to Our Software
+# How to use it
 
 ## Introduction
 
-Thank you for choosing to use our software. This guide will help you get started quickly, explaining how you can use the software either through the precompiled executables or by recompiling the software yourself.
+This guide will help you get started quickly, explaining how you can use the software either through the precompiled executables or by recompiling the software yourself.
 
 ## Using Precompiled Executables
 
-To simplify the use of our software, we provide precompiled executables that you can download directly from our website. These executables are available for various platforms and allow you to start using the software immediately without any need for compilation.
+To simplify the use of our software, we provide precompiled executables that you can download directly from GitHub or from the website. These executables are available for various platforms and allow you to start using the software immediately without any need for compilation.
 
 ### Steps:
 
-1. Visit our [website](https://meta-analysis.actilab.onl) to access the download section.
+1. Visit the [website](https://meta-analysis.actilab.onl) to access the download section.
 2. Select and download the executable corresponding to your operating system (Windows, macOS, Linux).
-3. Once downloaded, run the file to start the software.
+3. Once downloaded, run the file to install or run the software.
 
 ## Recompiling the Software
 
