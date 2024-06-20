@@ -8,7 +8,7 @@ import { getVersion } from '@tauri-apps/api/app';
 
 export class TauriFunctions {
 
-	static fileExtension:string = '.swplot';
+	static fileExtension:string = '.cipplot';
 
 	static async getAppVersion(): Promise<string> {
 		return await getVersion();
