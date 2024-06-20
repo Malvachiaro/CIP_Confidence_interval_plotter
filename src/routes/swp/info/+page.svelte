@@ -7,11 +7,11 @@
 </script>
 
 <div id="info_page">
-	<h1>Super Wonder Plot</h1>
+	<h1>Confidence Interval Plotter</h1>
 
 
 	<p>
-		Super Wonder Plot is an open-source program for the creation of high-definition forest plots.
+		Confidence Interval Plotter is an open-source program for the creation of high-definition forest plots.
 		The software is built using web technologies and encapsulated in an application installed on
 		personal computers. The application does not require an internet connection and works offline.
 		

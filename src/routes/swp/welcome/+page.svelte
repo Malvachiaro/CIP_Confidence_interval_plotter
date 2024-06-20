@@ -23,7 +23,7 @@
 
 <div id="page_welcomepage">
 	<header class="homepage_header">
-		<p>Super Wonder Plot - ver. {data.app_info}</p>
+		<p>Confidence Interval Plotter - ver. {data.app_info}</p>
 		<p>Graphical tool for creating forest plots</p>
 	</header>
 
@@ -32,7 +32,7 @@
 		<p style="text-transform: uppercase;">Ready.</p>
 		<p>LIST 30</p>
 		<p>10 REM FOREST PLOT MAKER</p>
-		<p>20 GOTO <a href="{toCip}">Start Super Wonder Plot</a></p>
+		<p>20 GOTO <a href="{toCip}">Start Confidence Interval Plotter</a></p>
 		<p>30 END</p>
 		<p><br />LOAD<br />PRESS PLAY ON TAPE<br /><br />LOADING...<br />READY.<br />RUN</p>
 	{/if}

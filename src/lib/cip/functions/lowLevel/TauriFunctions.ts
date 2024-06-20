@@ -8,6 +8,8 @@ import { getVersion } from '@tauri-apps/api/app';
 
 export class TauriFunctions {
 
+	static fileExtension:string = '.swplot';
+
 	static async getAppVersion(): Promise<string> {
 		return await getVersion();
 	}
@@ -50,7 +52,7 @@ export class TauriFunctions {
 			path = await documentDir();
 		}
 
-		path = await join(path, StringCleaner.clean_a_filename(projectName) + '.swplot');
+		path = await join(path, StringCleaner.clean_a_filename(projectName) + '.'+TauriFunctions.fileExtension);
 
 		const filePath = await save({
 			defaultPath: path,
@@ -58,7 +60,7 @@ export class TauriFunctions {
 			filters: [
 				{
 					name: 'Plot Files',
-					extensions: ['swplot']
+					extensions: [TauriFunctions.fileExtension]
 				}
 			]
 		});
@@ -73,7 +75,7 @@ export class TauriFunctions {
 			filters: [
 				{
 					name: 'Plot files',
-					extensions: ['swplot']
+					extensions: [TauriFunctions.fileExtension]
 				}
 			]
 		});

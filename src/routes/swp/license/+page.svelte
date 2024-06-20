@@ -18,7 +18,7 @@
 	
 </script>
 
-<h1>Super Wonder Plot License</h1>
+<h1>Confidence Interval Plotter License</h1>
 
 <h2>MIT License</h2>
 
