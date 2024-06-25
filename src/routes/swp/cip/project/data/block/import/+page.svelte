@@ -80,7 +80,7 @@
 			const response = await fetch('/templates/swp_import_template.csv');
 			if (response.ok) {
 				let content = await response.text();
-				await AppFunctions.downloadAsTextFile(content, "CVS/text", "swp_import_template", ".csv");
+				await AppFunctions.downloadAsTextFile(content, "CVS/text", "swp_import_template", "csv");
 			} else {
 				console.error('Failed to fetch the file:', response.statusText);
 			}
